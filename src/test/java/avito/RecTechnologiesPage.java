@@ -30,12 +30,15 @@ public class RecTechnologiesPage extends BaseSeleniumPage {
     public void recTechnologiesPageTitleCheck() {
         Assert.assertEquals(recTechnologiesTitle.getText(), RECPAGE_TITLE);
     }
+
     public void recTechnologiesPageCheckEMail() {
         Assert.assertEquals(recTechnologiesEMail.getText(), RECPAGE_EMAIL);
     }
+
     public void recTechnologiesPageRulesClick() {
         recTechnologiesRules.click();
     }
+
     public void checkRankingAdsTitle() {
         Assert.assertTrue(rankingAdsTitle.getText().contains(RANKING_ADS_TITLE));
     }

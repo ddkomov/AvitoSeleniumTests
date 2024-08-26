@@ -30,12 +30,15 @@ public class MainPage extends BaseSeleniumPage {
         driver.get(URL);
         PageFactory.initElements(driver, this);
     }
+
     public void checkCopyrightText() {
         Assert.assertEquals(copyright.getText(), COMPANY);
     }
+
     public void clickRecommendTechnologyButton() {
         recommendTechnologyButton.click();
     }
+
     public void clickSearchButton() {
         searchInput.sendKeys();
         searchButton.click();

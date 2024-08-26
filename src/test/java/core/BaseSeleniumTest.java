@@ -15,7 +15,7 @@ abstract public class BaseSeleniumTest {
 
     @Before
     public void setUp() {
-       // WebDriverManager.chromedriver().setup(); // setup chrome driver
+        // WebDriverManager.chromedriver().setup(); // setup chrome driver
 //        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Asus\\IdeaProjects\\AvitoSeleniumTests\\src\\main\\resources\\chromedriver.exe");
 //        ChromeOptions chromeOptions = new ChromeOptions();
         driver = new ChromeDriver();
@@ -24,6 +24,7 @@ abstract public class BaseSeleniumTest {
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         BaseSeleniumPage.setDriver(driver);
     }
+
     @After
     public void tearDown() {
         driver.close();
